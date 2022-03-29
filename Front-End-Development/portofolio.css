@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@300&display=swap');
+/* boiler plate for css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+  font-family: 'Roboto', sans-serif;
+    background-color: #011627;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+html{
+  scroll-behavior: smooth;
+}
+.navbar{
+    height: 12vh;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    position: fixed;
+    z-index: 1000;
+
+}
+.navbar .logo{
+     font-size: 60px;
+     font-weight: 1000;
+     color: #911909;
+}
+.navbar .navlinks ul{
+    width: 100px;
+    color: rgb(3, 62, 117);
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.navbar .navlinks {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.navbar .navlinks .navlink{
+    font-size: 30px;
+    font-weight: 600;
+}
+.navbar .navlinks .navlink.h{
+    margin-right: 20px;
+}
+
+.navbar .navlinks .navlink:hover{
+    color:rgb(192, 9, 9);
+}
+.hero{
+    width: 100%;
+    height: 70vh;
+}    
+.hero .mainpage{
+    background-color:#03233d;
+    width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.illus {
+	position: absolute;
+	right: 0;
+	top: 150px;
+	width: 300px;
+}
+.hero .mainpage .my{
+    clip-path: circle(45%);
+}
+.hero .mainpage .title{
+    color: whitesmoke;
+}
+.hero .mainpage .title:hover{
+    animation: colorchange 2s linear infinite;
+}
+
+@keyframes colorchange{
+    0% {
+        color: blue;
+      }
+      10% {
+        color: #8e44ad;
+      }
+      20% {
+        color: #1abc9c;
+      }
+      30% {
+        color: #d35400;
+      }
+      40% {
+        color: blue;
+      }
+      50% {
+        color: #34495e;
+      }
+      60% {
+        color: blue;
+      }
+      70% {
+        color: #2980b9;
+      }
+      80% {
+        color: #f1c40f;
+      }
+      90% {
+        color: #2980b9;
+      }
+      100% {
+        color: pink;
+      }
+}
+.herobtns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .button{
+        background-color:transparent;
+        display: flex;
+        color: yellow;
+        box-shadow: 0px 0px 3px  2px white;
+        padding: 10px 25px;
+        border-radius: 4px;
+        font-size: 23px;
+        font-weight: 800;
+        margin-top: 10px;
+        margin-right: 10px;
+}
+.button:hover{
+  transform: scaleY(4px);
+}
+.btn{
+  background-color:yellow;
+  display: flex;
+  color:black;
+  box-shadow: 0px 0px 3px  2px white;
+  padding: 10px 25px;
+  border-radius: 4px;
+  font-size: 23px;
+  font-weight: 800;
+  margin-top: 10px;
+  margin-left: 20px;
+} 
+.btn:hover{
+  transform: scale(1.02);
+}
+.skills{
+  width: 100%;
+  height: 71vh;
+  margin-top: 300px;
+}
+.skills .title{
+  font-size: 34px;
+  font-weight: 600;
+  color: yellow;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.skills .cardrow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.skills .card .cardtitle{
+  color: yellowgreen;
+  font-size: 26px;
+  font-weight: 700;
+}
+.skills .card.w{
+  margin-right: 170px;
+}
+.skills .card.p{
+  margin-left: 170px;
+}
+.skills .card.p .title{
+  margin-bottom: 35px;
+}
+.skills .card{
+  width: 300px;
+  height: 300px;
+	box-shadow: 0px 0px 3px  2px whitesmoke;
+	margin: 10px;
+	border-radius: 8px;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.skills .card .cardicons{
+  color: yellowgreen;
+  font-size: 50px;
+}
+.skills .card .cardicons.h{
+  color: rgb(245, 96, 42);
+}
+.skills .card .cardicons.c{
+  color:rgb(93, 248, 248);
+}
+.skills .card .cardicons.p{
+  color: whitesmoke;
+}
+.skills .card .cardcontent{
+  font-size: 20px;
+  font-weight: 600;
+  color: whitesmoke;
+  text-align: center;
+}
+.skills .card:hover{
+  transform: scale(1.04);
+}
+.share{
+  height: 20vh;
+  width: 100%;
+  margin-left: 20px;
+}
+.share .title{
+  font-size: 28px;
+  font-weight: 600;
+  color: aquamarine;
+  margin-left: 650px;
+}
+.share .icons{
+  margin-left: 30px;
+  font-size: 40px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 130px;
+}
+.share .icons .insta{
+  color:  #d11c1c;
+}
+.share .icons .insta:hover{
+ transform: scale(1.2);
+}
+.share .icons .whatsapp{
+  color: rgb(112, 182, 7);
+}
+.share .icons .whatsapp:hover{
+  transform: scale(1.2);
+}
+.share .icons .fb{
+  color:  #4267B2;
+}
+.share .icons .fb:hover{
+  transform: scale(1.2);
+}
+.scrollbutton{
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: circle(50%);
+  cursor: pointer;
+
+}
+
+@media screen and (max-width:768px){
+  .skills .cardRow{
+      flex-direction: column;
+  }
+  .navbar .navlinks ul{
+      display:block;
+  }
+  .skills .cardrow{
+    display: flex;
+    flex-direction: column;
+  }
+  .skills .cardrow .card.w{
+    margin-left: 160px;
+  }
+  .skills .cardrow .card.p{
+    margin-right: 170px;
+  }
+  .share{
+    margin-top: 700px;
+  }
+  .share .title{
+    margin-right: 10px;
+  }
+  .share .icons{
+    margin-left: 90px;
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+  .share .icons .fb{
+    margin-right: 20px;
+  }
+  .share .icons .whatsapp{
+    margin-left: 20px;
+  }
+ 
+  @media screen and (max-width: 640px) {
+      .navbar {
+        padding: 0px 30px;
+      }
+      .navbar .navlinks ul{
+        display:block;
+    }
+      .navbar .navlink ul{
+        margin-left: 20px;
+      }
+      .mainpage .title {
+        font-size: 25px;
+        font-weight: 800;
+        margin-bottom: 10px;
+      }
+      .hero .mainpage .img{
+         margin-bottom: 60px;
+         width: 80px;
+         height: 80px;
+      }
+      .skills .cardrow{
+        display: flex;
+        flex-direction: column;
+      }
+      .skills .cardrow .card.w{
+        margin-left: 160px;
+      }
+      .skills .cardrow .card.p{
+        margin-right: 170px;
+      }
+
+      .share{
+        margin-top: 700px;
+      }
+      .share .title{
+        margin-right: 10px;
+      }
+      .share .icons{
+        margin-left: 90px;
+        display: flex;
+        justify-content: space-evenly;
+
+      }
+      .share .icons .fb{
+        margin-right: 20px;
+      }
+      .share .icons .whatsapp{
+        margin-left: 20px;
+      }
+    }
+}

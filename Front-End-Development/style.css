@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Viaoda+Libre&display=swap');
+
+*{
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;  
+
+}
+:root{
+    --bizgreen: yellowgreen;
+    --bizwhitesmoke:whitesmoke;
+    --bizlinks: rgb(87, 90, 38);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    font-family: 'Mate SC', serif;
+    font-family: 'Viaoda Libre', cursive;
+}
+.navbar{
+    height: 10vh;
+    background-color: var(--bizgreen);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+.navbar .logo{
+    font-size: 60px;
+    font-weight: bolder;
+    color: var(--bizwhitesmoke);
+}
+.navbar .navlinks ul{
+    width: 300px;
+    color: var(--bizlinks);
+    font-size: 23px ;
+    font-weight: bolder;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+.navbar .navlinks .navlink :hover{
+    transition: all 0.9s ease;
+    color: whitesmoke;
+}
+.hero{
+   width: 100%;
+   height: 90vh;
+   background-image: url(https://images.unsplash.com/photo-1508873699372-7aeab60b44ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+.hero .overlay{
+    background-color: rgba(0, 0, 0, 0.233);
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section{
+    padding: 50px 120px;
+}
+.hero .overlay .title{
+    font-size: 55px;
+    font-weight: 30px;
+    color: var(--bizwhitesmoke);
+    margin-bottom: 20px;
+}
+.hero .overlay .text{
+    color: blanchedalmond;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.hero .overlay .btn{
+    background-color: rgb(207, 37, 14);
+    padding: 10px;
+    border-radius: 50px;
+    font-weight: bolder;
+}   
+.hero .overlay .btn:hover{
+    color: whitesmoke;
+}
+.services .cardrow{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.services .cardrow .card{
+    box-shadow: 0px 0px 5px rgb(42, 109, 11);
+    margin: 50px;
+    padding: 50px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+.services .cardrow .card .cardicon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    
+}
+.services .cardrow .card  span {
+    
+  
+    font-size: 50px;
+}
+.services .cardrow .card .cardtitle{
+    color: rgb(124, 233, 138);
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+}
+.services .cardrow .card .cardcontent{
+    text-align: left;
+}
+.services .title{
+    font-size: xx-large;
+    margin: 20px 0px;
+    text-align: center;
+
+}
+.services .cardrow .card:hover{
+    transform: scale(1.04);
+}
+.services .cardrow  .cardicon:hover{
+    color:greenyellow;
+}
+
+.booking{
+    background-color: greenyellow;
+    width: 100%;
+    height: 25vh;
+    color: rgb(27, 12, 12);
+    text-align: center;
+}
+.booking .titledown{
+
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+.booking .text{
+    color: black;
+    justify-content: center;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom:10px ;
+}
+.booking  .bttn{
+   color:black;
+   font-size: x-large;
+   font-weight:bolder;
+   background-color: brown;
+   border-radius: 10px;
+   padding: 10px;
+   margin: 10px 10px ;
+}
+.booking .bttn:hover{
+    color:whitesmoke;
+}
+.copyright{
+    font-weight: 900;
+}
+/*modified code for phone*/
+/*pc first */
+/* @media screen and (max- width:768px) - tablet size */
+/* @media screen and (max- width:640px) - mobile size */
+/*mobile first */
+/* @media screen and (min- width:768px) - tablet size */
+/* @media screen and (min- width:640px) - mobile size */
+/* now it is written in mobile firse*/
+@media screen and (max-width: 768px) {
+    .services .cardrow {
+      flex-direction: column;
+    }
+    .navbar .navLinks ul {
+      display: none;
+    }
+    .burger {
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 640px) {
+    .navbar {
+      padding: 0px 30px;
+      display: block;
+    }
+    .hero .overlay .title {
+      color: var(--bizWhite);
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .hero .overlay .text {
+      color: var(--bizWhite);
+      font-size: 18px;
+    }
+    .section {
+      padding: 30px 30px;
+    }
+    .title {
+      margin-top: 30px;
+    }
+    .booking .text {
+      text-align: justify;
+    }
+  }

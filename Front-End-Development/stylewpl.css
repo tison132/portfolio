@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Roboto+Condensed:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;  
+  
+  }
+  a{
+      text-decoration: none;
+      color:black;
+  }
+  body{
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .navbar{
+    height: 10vh;
+    background-color:gold;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+.navbar .logo{
+    font-size: 60px;
+    font-weight: bolder;
+}
+.navbar .navlinks ul{
+    width: 300px;
+    color: red;
+    font-size: 20px ;
+    font-weight: bolder;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+.navbar .navlinks  :hover{
+    color:whitesmoke;
+    transition: all 0.5s ease;
+}
+.hero {
+  background-image:url(https://1.bp.blogspot.com/-KwXVJWhMvgE/YHhcG7Cr6lI/AAAAAAAAAAM/AokafXIyohUBU7kEVVnjIX1PAVYQ7oUWwCLcBGAsYHQ/s2048/Remini20210413152340978.jpg);
+  height: 100vh;
+
+  color: aliceblue;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.233);
+  
+}
+.hero .overlay{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+}
+.hero .title{
+   font-size: 40px;
+   margin-right: 1010px;
+   font-weight: 600;
+   margin-top: 190px;
+}
+.hero  .text{
+    font-size: 31px;
+    color:greenyellow;
+    font-weight: 600;
+    margin-right: 1090px;
+    margin-top: 20px;
+    padding: 12px 25px;
+    border-radius: 5px;
+    background-color: transparent;
+    outline: white solid;
+    margin-left: 50px;
+    
+}
+.hero .text:hover{
+    transform: scale(1.032);
+}
+.hero .overlay .bttn{
+    color: goldenrod;
+    font-size: 16px;
+    margin-left: 30px;
+    background-color: transparent;
+    outline: white solid;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 6px;
+    margin-top: 30px;
+    margin-right: 1120px;
+   
+}
+.hero .overlay .bttn:hover{
+    color:orangered;
+    transform: scale(1.032);
+}
+.Login{
+    box-shadow: 0px 0px 5px crimson;
+    margin: 50px;
+    padding: 50px;
+    border-radius: 8px;
+    background-color: rgb(219, 231, 50);
+    color: black;
+    display: ;
+    text-align:center;
+    justify-content:center ;
+    margin-bottom: 20px;
+}
+.Login .btn{
+background-color: red;
+margin-bottom: 10px;
+border-radius: 4px;
+margin-left: 100px;
+justify-content: space-between;
+text-align: end;
+margin-top: 8px;
+
+}
+.Login .btn:hover{
+    color: rgb(248, 239, 239);
+    transform: scale(1.032);
+}
+
+.Login .pass{
+    margin-left: 73px;
+    margin-top: 6px;
+}
+.Login .age{
+     margin-left: 54px;
+}
+.Login .gender{
+    margin-right: 25px;
+}
+.Login .fm{
+    margin-top: 10px;
+}
+
+.Login .db1{
+    margin-right: 64px;
+}
+.Login .mail{
+    margin-right: 80px;
+}
+.Login .Mail{
+    margin-left: 25px;
+}
+.Login .E{
+    margin-left: 16px;
+}
+.Login .EM{
+    margin-right: 20px;
+
+}
+.Login .num{
+    margin-right: 30px;
+
+.Login .Pass{
+    margin-left: 5px;
+}

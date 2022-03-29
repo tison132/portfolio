@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@300&display=swap');
+/* boiler plate for css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+  font-family: 'Roboto', sans-serif;
+    background-color: #011627;
+}
+.illus {
+	position: absolute;
+	right: 0;
+	top: 150px;
+	width: 300px;
+}
+.self{
+    margin-top: 90px;
+}
+.self .title{
+    font-size: 42px;
+    font-weight: 500;
+    color: chartreuse;
+    margin-left: 40px;
+}
+.self .img{
+    margin-top: 20px;
+    margin-left: 20px;
+    clip-path: circle(45%);
+}
+.self .content{
+    font-size: 20px;
+    font-weight: 500;
+    color: whitesmoke;
+    margin-left: 30px;
+    justify-content: space-evenly;
+}
+@media screen and (max-width:768px){
+    .self .title{
+        font-size: 37px;
+        font-weight:500;
+    }
+    .self .img{
+        width: 200px;
+        height: 200px;
+    }
+    .self .content{
+        font-size: 20px;
+        font-size: 400;
+    }
+}
+@media screen and (max-width: 640px) {
+    .self .title{
+        font-size: 34px;
+        font-weight: 500;
+    }
+    .self .img{
+        width: 180px;
+        height: 180px;
+    }
+    .self .content{
+        font-size: 20px;
+        font-weight: 420;
+    }
+}

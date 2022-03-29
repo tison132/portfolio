@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@300&display=swap');
+/* boiler plate for css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: 'Roboto', sans-serif;
+     background-color: #011627;
+}
+.project{
+    margin-top: 100px;
+    height: 80vh;
+    width: 100%;
+}
+.project .title{
+    font-size: 40px;
+    font-weight: 700;
+    color: yellow;
+    margin-left: 20px;
+}
+.project .content{
+    margin-top: 50px;
+    font-size: 35px;
+    font-weight: 500;
+    color: white;
+    margin-left: 20px;
+}
+.project .imgs .Title{
+    margin-top: 80px;
+    margin-bottom: 20px;
+    color: yellowgreen;
+    font-size: 37px;
+    font-weight: 700;
+    margin-left: 15px;
+}
+.project .imgs{
+     margin-left: 20px;
+     margin-top: 10px;
+}
+.project .imgs .ws{
+    margin-left: 20px;
+}
+.project .imgs .Ws{
+    margin-left: 60px; 
+}
+@media screen and (max-width:768px){
+    .project .title{
+        font-size: 37px;
+        font-weight: 500;
+    }
+    .project .content{
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .project .imgs .Ws{
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width:640px){
+        .project .title{
+            font-size: 35px;
+            font-weight: 500;
+        }
+        .project .content{
+            font-size: 19px;
+            font-weight: 500;
+        }
+    }
